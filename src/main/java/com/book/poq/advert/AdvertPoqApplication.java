@@ -1,13 +1,13 @@
-package com.mykyta.advertmicroservice;
+package com.book.poq.advert;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AdvertMicroserviceApplication {
+public class AdvertPoqApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AdvertMicroserviceApplication.class, args);
+        SpringApplication.run(AdvertPoqApplication.class, args);
     }
 
 }
