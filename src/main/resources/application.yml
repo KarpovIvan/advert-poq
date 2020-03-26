@@ -15,7 +15,8 @@ spring:
       client:
         reactive:
           endpoints: localhost:9200
-
+  main:
+    allow-bean-definition-overriding: true
 
 ---
 spring:
@@ -29,4 +30,6 @@ spring:
       host: mongo
       port: 27017
       database: advert-db
+  main:
+    allow-bean-definition-overriding: true
 
