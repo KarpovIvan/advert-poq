@@ -1,20 +1,28 @@
-package com.mykyta.advertmicroservice.entity;
+package com.book.poq.advert.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
 @Document(indexName = "advert")
-public class Advert {
+public class AdvertId {
     @Id
     private int id;
-    private String text;
+    private String name;
 
-    public Advert() {
+    public AdvertId() {
     }
 
-    public Advert(int id, String text) {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public AdvertId(int id, String name) {
         this.id = id;
-        this.text = text;
+        this.name = name;
     }
 
     public int getId() {
@@ -25,19 +33,13 @@ public class Advert {
         this.id = id;
     }
 
-    public String getText() {
-        return text;
-    }
 
-    public void setText(String text) {
-        this.text = text;
-    }
 
     @Override
     public String toString() {
         return "Advert{" +
                 "id=" + id +
-                ", text='" + text + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }
