@@ -1,7 +1,6 @@
 package com.book.poq.advert.controllers;
 
 import com.book.poq.advert.entity.Advert;
-import com.book.poq.advert.entity.AdvertId;
 import com.book.poq.advert.services.AdvertService;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
