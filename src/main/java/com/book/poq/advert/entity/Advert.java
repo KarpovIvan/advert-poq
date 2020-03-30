@@ -1,9 +1,9 @@
 package com.book.poq.advert.entity;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(indexName = "advert")
+@Document(collection = "advert")
 public class Advert {
     @Id
     private int id;

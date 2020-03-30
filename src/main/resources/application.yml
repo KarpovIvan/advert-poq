@@ -11,17 +11,15 @@ spring:
 spring:
   profiles: dev
   data:
-    elasticsearch:
-      client:
-        reactive:
-          endpoints: localhost:9200
-
+    mongodb:
+      host: localhost
+      database: advert-db
 
 ---
 spring:
   profiles: docker
   data:
-    elasticsearch:
-      client:
-        reactive:
-          endpoints: elasticsearch:9200
+    mongodb:
+      host: mongo
+      database: advert-db
+

@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AdvertConfiguration {
 
+
     @Bean
     public AdvertService advertService(AdvertRepository advertRepository){
         return new AdvertServiceImpl(advertRepository);
