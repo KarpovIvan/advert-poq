@@ -1,8 +1,8 @@
-package com.mykyta.advertmicroservice.services.impl;
+package com.book.poq.advert.services.impl;
 
-import com.mykyta.advertmicroservice.entity.Advert;
-import com.mykyta.advertmicroservice.repositories.AdvertRepository;
-import com.mykyta.advertmicroservice.services.AdvertService;
+import com.book.poq.advert.entity.Advert;
+import com.book.poq.advert.repositories.AdvertRepository;
+import com.book.poq.advert.services.AdvertService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

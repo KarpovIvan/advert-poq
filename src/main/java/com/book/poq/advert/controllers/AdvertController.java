@@ -1,7 +1,7 @@
-package com.mykyta.advertmicroservice.controllers;
+package com.book.poq.advert.controllers;
 
-import com.mykyta.advertmicroservice.entity.Advert;
-import com.mykyta.advertmicroservice.services.AdvertService;
+import com.book.poq.advert.entity.Advert;
+import com.book.poq.advert.services.AdvertService;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

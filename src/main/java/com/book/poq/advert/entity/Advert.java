@@ -1,4 +1,4 @@
-package com.mykyta.advertmicroservice.entity;
+package com.book.poq.advert.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;

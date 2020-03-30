@@ -1,3 +1,27 @@
 server:
   port:
     8099
+
+
+spring:
+  profiles:
+    active: docker
+
+---
+spring:
+  profiles: dev
+  data:
+    elasticsearch:
+      client:
+        reactive:
+          endpoints: localhost:9200
+
+
+---
+spring:
+  profiles: docker
+  data:
+    elasticsearch:
+      client:
+        reactive:
+          endpoints: elasticsearch:9200
